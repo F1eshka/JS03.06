@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Футбольне поле</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #field {
+            width: 100%;
+            height: 100vh;
+            background-color: #c8f5c8;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        #ball {
+            width: 100px;
+            height: 100px;
+            background: url('https://cdn-icons-png.flaticon.com/512/405/405726.png') no-repeat center/contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: top 0.5s ease, left 0.5s ease;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="field">
+        <div id="ball"></div>
+    </div>
+
+    <script src="task3.js"></script>
+</body>
+
+</html>

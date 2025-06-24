@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Змінний розмір блоку</title>
+    <style>
+        #resizable {
+            width: 300px;
+            height: 200px;
+            border: 2px solid #444;
+            padding: 10px;
+            position: relative;
+            resize: none;
+            overflow: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        #resizable .resizer {
+            width: 15px;
+            height: 15px;
+            background: #444;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            cursor: se-resize;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Блок з можливістю зміни розміру</h2>
+
+    <div id="resizable">
+        Це блок з текстом. Його можна розтягувати, тягнучи за нижній правий кут.
+        <div class="resizer"></div>
+    </div>
+
+    <script src="task8.js"></script>
+</body>
+
+</html>

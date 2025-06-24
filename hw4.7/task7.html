@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Дерево директорій</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            cursor: pointer;
+            position: relative;
+            padding: 5px;
+            transition: font-weight 0.2s;
+        }
+
+        li:hover {
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Файлова структура</h2>
+
+    <ul id="tree">
+        <li>
+            Проєкт
+            <ul>
+                <li>index.html</li>
+                <li>
+                    css
+                    <ul>
+                        <li>style.css</li>
+                        <li>responsive.css</li>
+                    </ul>
+                </li>
+                <li>
+                    js
+                    <ul>
+                        <li>main.js</li>
+                        <li>helper.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script src="task7.js"></script>
+</body>
+
+</html>

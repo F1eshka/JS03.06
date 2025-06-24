@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Підказки для кнопок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .button-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .tooltip {
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            white-space: nowrap;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 100;
+        }
+
+        .tooltip.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <button data-tooltip="Підказка для кнопки 1">Кнопка 1</button>
+        <div class="tooltip"></div>
+    </div>
+
+    <div class="button-container">
+        <button data-tooltip="Пояснення до кнопки 2">Кнопка 2</button>
+        <div class="tooltip"></div>
+    </div>
+
+    <div class="button-container">
+        <button data-tooltip="Додаткова дія для 3">Кнопка 3</button>
+        <div class="tooltip"></div>
+    </div>
+
+    <script src="task6.js"></script>
+</body>
+
+</html>

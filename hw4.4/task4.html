@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Світлофор</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .traffic-light {
+            width: 80px;
+            background-color: #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 0 auto 20px;
+        }
+
+        .light {
+            width: 50px;
+            height: 50px;
+            background-color: #111;
+            border-radius: 50%;
+            margin: 10px auto;
+            transition: background-color 0.3s;
+        }
+
+        #controlBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="traffic-light">
+        <div id="red" class="light"></div>
+        <div id="yellow" class="light"></div>
+        <div id="green" class="light"></div>
+    </div>
+
+    <button id="controlBtn">Перемкнути</button>
+
+    <script src="task4.js"></script>
+</body>
+
+</html>
